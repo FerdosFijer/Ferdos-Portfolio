@@ -319,12 +319,101 @@ footer .footer-container form textarea::placeholder {
     .btn-group {
         justify-content: center;
     }
+
     header {
-    background: url("../images/header_bg.png"), #FFF8F3;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-   
+        background: url("../images/header_bg.png"), #FFF8F3;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+    }
+
+    #skills .skills-container .skill-box,
+    #about .about-contain .about-info,
+    footer .footer-container,
+    #resume .resume-container,
+    nav,
+    #banner {
+        flex-direction: column;
+    }
+
+    #about .about-contain .about-info {
+        gap: 40px;
+    }
+
+    .skill-box .skill-card {
+        max-width: 100%;
+    }
+
+    #about .about-contain {
+        padding: 20px;
+    }
+
+    footer .footer-container form input[type="text"],
+    .footer-container form textarea {
+        width: 100%;
+    }
+
+    #resume .resume-container {
+        margin-top: 60px;
+    }
+
+    .resume-card {
+        margin-right: 10px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner {
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #banner .banner-image img {
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+
+    #banner .banner-content h1 {
+        font-size: 44px;
+        font-weight: bold;
+        color: #181818;
+        margin-bottom: 20px;
+    }
 }
+
+@media screen and (min-width:576px) and (max-width:996px) {
+    .container {
+        width: 95%;
+    }
+
+    #about,
+    #skills,
+    #resume {
+        padding-top: 60px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+
+    header {
+        background: url("../images/header_bg.png"), #FFF8F3;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+    }
 
     #skills .skills-container .skill-box,
     #about .about-contain .about-info,
